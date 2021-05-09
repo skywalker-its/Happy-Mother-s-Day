@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.heart {
+    position: fixed;
+    top: -1vh;
+    font-size: 50px;
+    transform: translateY(0);
+    animation: fall 100s linear forwards;
+} 
+
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
+}
